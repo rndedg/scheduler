@@ -9,7 +9,6 @@ export default function InterviewerListItem(props) {
     "interviewers__item--selected": props.selected
   })
 
-  console.log(props) //console.log to see what props are being passed
 
   const isSelected = () => {
 
