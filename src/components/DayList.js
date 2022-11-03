@@ -9,11 +9,11 @@ export default function DayList(props) {
         key={day.id}
         name={day.name}
         spots={day.spots}
-        setDay={props.setDay}
-        selected={day.name === props.day}
+        selected={day.name === props.value}
+        setDay={props.onChange}
     />)
   });
-  
+  console.log("RIGHT HERE", props)
   return (
     <ul>
       {days}
