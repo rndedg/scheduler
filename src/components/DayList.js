@@ -13,7 +13,7 @@ export default function DayList(props) {
         setDay={props.onChange}
     />)
   });
-  console.log("RIGHT HERE", props)
+
   return (
     <ul>
       {days}
