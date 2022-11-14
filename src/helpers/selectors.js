@@ -38,9 +38,9 @@ export function getInterviewersForDay(state, day) {
     return [];
   }
 
-  for (const appointmentID of filteredDays.appointments) {
-    if (state.appointments[appointmentID]) {
-      results.push(state.appointments[appointmentID]);
+  for (const interviewerID of filteredDays.interviewers) {
+    if (state.interviewers[interviewerID]) {
+      results.push(state.interviewers[interviewerID]);
     }
   }
   
