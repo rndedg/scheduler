@@ -8,12 +8,19 @@ import useApplicationData from "hooks/useApplicationData";
 
 export default function Application(props) {
 
-  const {
-    state,
-    setDay,
-    bookInterview,
-    cancelInterview
-  } = useApplicationData();
+  // const {
+  //   state,
+  //   setDay,
+  //   bookInterview,
+  //   cancelInterview
+  // } = useApplicationData();
+
+  const { state, setDay, bookInterview, cancelInterview } = useApplicationData({
+    day: "Monday",
+    appointments: [],
+    interviews: {},
+    days: [],
+  });
 
 
   const appointments = getAppointmentsForDay(state, state.day);
