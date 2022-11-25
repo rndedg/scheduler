@@ -43,6 +43,6 @@ export function getInterviewersForDay(state, day) {
       results.push(state.interviewers[interviewerID]);
     }
   }
-  
+
   return results;
 }
