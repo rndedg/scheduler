@@ -1,7 +1,7 @@
 export function getAppointmentsForDay(state, day) {
   let results = [];
 
-  let filteredDays = state.days.find(selectedDay => selectedDay.name === day);
+  let filteredDays = state.days.find((selectedDay) => selectedDay.name === day);
 
   if (!filteredDays) {
     return [];
@@ -25,14 +25,14 @@ export function getInterview(state, interview) {
   } else {
     return null;
   }
-  
+
   return results;
 }
 
 export function getInterviewersForDay(state, day) {
   let results = [];
 
-  let filteredDays = state.days.find(selectedDay => selectedDay.name === day);
+  let filteredDays = state.days.find((selectedDay) => selectedDay.name === day);
 
   if (!filteredDays) {
     return [];
