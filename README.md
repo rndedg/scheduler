@@ -30,3 +30,7 @@ Some dependencies that were used are:
 4. Go to <http://localhost:8000/> in your browser and tinker with the app.
 5. (Optional): Run the Jest Test Framework using `npm test` in another terminal.
 6. (Optional): Run the Storybook Visual Testbed using `npm run storybook` in another terminal.
+
+## Known Issues
+
+There are currently no known bugs and the App seems to be working as intended. 
